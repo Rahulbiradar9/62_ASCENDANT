@@ -1,6 +1,20 @@
-# Security Scan Project
+# 🔒 AUDIT GUARDIAN - Website Audit Tool
+### Problem Statement 2: 
 
-A comprehensive security testing setup that combines OWASP ZAP automated scanning with a vulnerable target application for testing purposes.
+Website Audit Tool with Security and Performance Analysis
+
+### Problem Description
+The task is to create a comprehensive website auditing platform that can evaluate a website for multiple aspects such as security vulnerabilities, performance bottlenecks, SEO (Search Engine Optimization) issues, and accessibility compliance. 
+
+# Solution: 
+We built 'Audit Guardian'. It's a one-stop tool that gives you an instant,
+comprehensive website health report with a single click.
+
+# Implementation:
+When you just enter your URL. In seconds, our system scans for critical security
+vulnerabilities like SQL injection and XSS, uncovers SEO gaps like missing meta tags, and
+identifies performance bottlenecks slowing your site down. To be more precise let’s see how
+each feature or supporting tools help in Web Auditing
 
 ## Prerequisites
 
@@ -25,15 +39,29 @@ Start ZAP:
 ```bash
 docker-compose up -d
 ```
+
 Execute the security scan:
 ```bash
 python3 scripts/zap_scan.py
 ```
+
 Use different terminal:
 ```bash
 docker-compose -f target-app/docker-compose.yml up -d
 ```
+
 Update target_url in zap_scan.py to http://localhost:3000.
+
+To run the application in development mode:
+```bash
+npm run dev
+```
+
+To stop all running containers:
+```bash
+docker-compose -f target-app/docker-compose.yml down
+docker-compose down
+```
 
 # ⚙️ Technology Stack
 
@@ -82,5 +110,3 @@ Update target_url in zap_scan.py to http://localhost:3000.
 - **OWASP ZAP** → Security testing and vulnerability scanning  
 
 ---
-
-✅ With this stack, our solution is **scalable, secure, and AI-driven**, designed to meet real-world challenges in a hackathon setting.

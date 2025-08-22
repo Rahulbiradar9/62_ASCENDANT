@@ -1,0 +1,143 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>SEO Audit Report</title>
+<style>
+body { font-family: Arial, sans-serif; margin: 24px; color: #222; }
+h1 { font-size: 24px; margin-bottom: 8px; }
+h2 { font-size: 18px; margin-top: 24px; }
+code, pre { background: #f6f8fa; padding: 2px 4px; }
+table { border-collapse: collapse; width: 100%; }
+th, td { border: 1px solid #ddd; padding: 8px; font-size: 14px; }
+th { background: #fafafa; text-align: left; }
+.score { font-size: 32px; font-weight: bold; }
+.badge { display: inline-block; padding: 2px 8px; border-radius: 4px; background: #eef; margin-left: 8px; }
+.charts { display: grid; grid-template-columns: 1fr; gap: 16px; }
+.charts .card { background:#fff; border:1px solid #eee; border-radius:8px; padding:12px; }
+</style>
+</head>
+<body>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <h1>SEO Audit Report <span class="badge">https://dev-ops-engineer-portfolio.vercel.app/</span></h1>
+  <div class="score">Score: 85</div>
+
+  <h2>Visualizations</h2>
+  <div class="charts">
+    <div class="card">
+      <h3 style="margin:0 0 8px 0;">Benchmarks vs Your Page</h3>
+      <canvas id="barMetrics"></canvas>
+    </div>
+    <div class="card">
+      <h3 style="margin:0 0 8px 0;">Link Health</h3>
+      <canvas id="pieLinks"></canvas>
+    </div>
+  </div>
+
+  <h2>On-page</h2>
+  <table>
+    <tr><th>Title</th><td>DevOps Engineer | Multi-Cloud & AI Automation Expert</td></tr>
+    <tr><th>Meta Description</th><td>Passionate DevOps Engineer specializing in Multi-cloud, Kubernetes, Docker, and AI-Powered Automation. 3rd place IIIT web3ssh Hackathon winner.</td></tr>
+    <tr><th>H1</th><td>|</td></tr>
+    <tr><th>Canonical</th><td>None</td></tr>
+    <tr><th>Viewport Meta</th><td>Yes</td></tr>
+    <tr><th>Images Missing Alt</th><td>0</td></tr>
+    <tr><th>Lang/Charset</th><td>{'lang': 'en', 'charset': 'utf-8'}</td></tr>
+  </table>
+
+  <h2>Social & Structured Data</h2>
+  <table>
+    <tr><th>Open Graph</th><td>Missing</td></tr>
+    <tr><th>Twitter Card</th><td>Missing</td></tr>
+    <tr><th>JSON-LD Blocks</th><td>0</td></tr>
+    <tr><th>JSON-LD Errors</th><td>0</td></tr>
+  </table>
+
+  <h2>Technical</h2>
+  <table>
+    <tr><th>Status</th><td>200</td></tr>
+    <tr><th>Response Time (ms)</th><td>345</td></tr>
+    <tr><th>Content Length</th><td>0</td></tr>
+    <tr><th>Gzip/Brotli</th><td>Yes</td></tr>
+    <tr><th>HSTS</th><td>Yes</td></tr>
+    <tr><th>Security Headers</th><td>
+      X-Content-Type-Options: No<br/>
+      X-Frame-Options: No<br/>
+      Referrer-Policy: No<br/>
+      CSP: No
+    </td></tr>
+  </table>
+
+  <h2>Robots & Sitemap</h2>
+  <table>
+    <tr><th>robots.txt</th><td>Missing</td></tr>
+    <tr><th>sitemap.xml</th><td>Missing</td></tr>
+    <tr><th>Notes</th><td></td></tr>
+  </table>
+
+  <h2>Links</h2>
+  <table>
+    <tr><th>Internal Links Checked</th><td>7</td></tr>
+    <tr><th>External Links Checked</th><td>25</td></tr>
+  </table>
+
+  <h3>Broken Internal</h3>
+  <table><tr><th>URL</th><th>Status</th></tr></table>
+  <h3>Broken External</h3>
+  <table><tr><th>URL</th><th>Status</th></tr><tr><td>https://demo.example.com</td><td>0</td></tr><tr><td>https://github.com/username/multi-cloud-k8s</td><td>0</td></tr><tr><td>https://github.com/username/ai-infra-monitor</td><td>0</td></tr><tr><td>https://monitor.example.com</td><td>0</td></tr><tr><td>https://github.com/username/gitops-pipeline</td><td>0</td></tr><tr><td>https://pipeline.example.com</td><td>0</td></tr><tr><td>https://github.com/username/container-security</td><td>0</td></tr><tr><td>https://security.example.com</td><td>0</td></tr><tr><td>https://github.com/username/cost-optimizer</td><td>0</td></tr><tr><td>https://cost.example.com</td><td>0</td></tr></table>
+  <h3>Redirects</h3>
+  <table><tr><th>URL</th><th>Status</th></tr></table>
+
+  <h2>Recommendations</h2>
+  <ul><li>Add a canonical &lt;link&gt; to avoid duplicate content.</li><li>Add Open Graph tags for better social sharing.</li><li>Add Twitter Card meta tags.</li><li>Add X-Content-Type-Options: nosniff header.</li><li>Add X-Frame-Options header to prevent clickjacking.</li><li>Set a Referrer-Policy header.</li><li>Consider adding a Content-Security-Policy header.</li><li>Missing robots.txt file.</li><li>Missing sitemap.xml file.</li></ul>
+
+  <script>
+    (function() {
+      const barCtx = document.getElementById('barMetrics').getContext('2d');
+      const pieCtx = document.getElementById('pieLinks').getContext('2d');
+
+      const labels = ['TTFB (ms)', 'Page size (MB)', 'Missing alts', 'H1 count', 'Security headers', 'Social tags', 'Broken links', 'Redirects'];
+      const userData = [345, 0.0, 0, 1, 0, 0, 10, 0];
+      const targetData = [800, 1.0, 0, 1, 4, 2, 0, 2];
+
+      new Chart(barCtx, {
+        type: 'bar',
+        data: {
+          labels: labels,
+          datasets: [
+            { label: 'Your page', data: userData, backgroundColor: 'rgba(37, 99, 235, 0.7)' },
+            { label: 'Best practice', data: targetData, backgroundColor: 'rgba(16, 185, 129, 0.5)' }
+          ]
+        },
+        options: {
+          responsive: true,
+          scales: {
+            y: { beginAtZero: true }
+          },
+          plugins: {
+            legend: { position: 'top' }
+          }
+        }
+      });
+
+      const valid = 22;
+      const broken = 10;
+      const redirects = 0;
+      new Chart(pieCtx, {
+        type: 'pie',
+        data: {
+          labels: ['Valid', 'Broken', 'Redirects'],
+          datasets: [{
+            data: [valid, broken, redirects],
+            backgroundColor: ['#22c55e', '#ef4444', '#f59e0b']
+          }]
+        },
+        options: { responsive: true }
+      });
+    })();
+  </script>
+
+</body>
+</html>

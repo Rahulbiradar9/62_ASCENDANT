@@ -1,0 +1,796 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>ZAP Security Scan Report - https://www.udemy.com/</title>
+    <style>
+        body { font-family: Arial, sans-serif; margin: 40px; }
+        .header { background: #f4f4f4; padding: 20px; border-radius: 5px; }
+        .summary { margin: 20px 0; }
+        .alert { border: 1px solid #ddd; margin: 10px 0; padding: 15px; border-radius: 5px; }
+        .high { border-left: 5px solid #ff4d4d; background: #fff5f5; }
+        .medium { border-left: 5px solid #ffa64d; background: #fffaf5; }
+        .low { border-left: 5px solid #4d94ff; background: #f5f9ff; }
+        .info { border-left: 5px solid #4dff4d; background: #f5fff5; }
+        .risk-high { color: #ff4d4d; font-weight: bold; }
+        .risk-medium { color: #ffa64d; font-weight: bold; }
+        .risk-low { color: #4d94ff; font-weight: bold; }
+        .risk-info { color: #4dff4d; font-weight: bold; }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>OWASP ZAP Security Scan Report</h1>
+        <p><strong>Target URL:</strong> https://www.udemy.com/</p>
+        <p><strong>Scan Date:</strong> 2025-08-22 05:08:23</p>
+        <p><strong>ZAP Version:</strong> 2.16.1</p>
+    </div>
+    
+    <div class="summary">
+        <h2>Scan Summary</h2>
+        <p><span class="risk-high">High:</span> 0 alerts</p>
+        <p><span class="risk-medium">Medium:</span> 3 alerts</p>
+        <p><span class="risk-low">Low:</span> 12 alerts</p>
+        <p><span class="risk-info">Informational:</span> 45 alerts</p>
+        <p><strong>Total:</strong> 60 alerts</p>
+    </div>
+    
+    <h2>Detailed Findings</h2>
+    
+            <div class="alert medium">
+                <h3><span class="risk-medium">Medium</span>: Content Security Policy (CSP) Header Not Set</h3>
+                <p><strong>URL:</strong> https://www.udemy.com/</p>
+                <p><strong>Description:</strong> Content Security Policy (CSP) is an added layer of security that helps to detect and mitigate certain types of attacks, including Cross Site Scripting (XSS) and data injection attacks. These attacks are used for everything from data theft to site defacement or distribution of malware. CSP provides a set of standard HTTP headers that allow website owners to declare approved sources of content that browsers should be allowed to load on that page — covered types are JavaScript, CSS, HTML frames, fonts, images and embeddable objects such as Java applets, ActiveX, audio and video files.</p>
+                <p><strong>Solution:</strong> Ensure that your web server, application server, load balancer, etc. is configured to set the Content-Security-Policy header.</p>
+                <p><strong>Reference:</strong> https://developer.mozilla.org/en-US/docs/Web/Security/CSP/Introducing_Content_Security_Policy
+https://cheatsheetseries.owasp.org/cheatsheets/Content_Security_Policy_Cheat_Sheet.html
+https://www.w3.org/TR/CSP/
+https://w3c.github.io/webappsec-csp/
+https://web.dev/articles/csp
+https://caniuse.com/#feat=contentsecuritypolicy
+https://content-security-policy.com/</p>
+                <p><strong>Parameter:</strong> </p>
+                <p><strong>Evidence:</strong> </p>
+                <p><strong>CWE ID:</strong> 693</p>
+                <p><strong>WASC ID:</strong> 15</p>
+            </div>
+            
+            <div class="alert medium">
+                <h3><span class="risk-medium">Medium</span>: Content Security Policy (CSP) Header Not Set</h3>
+                <p><strong>URL:</strong> https://www.udemy.com/robots.txt</p>
+                <p><strong>Description:</strong> Content Security Policy (CSP) is an added layer of security that helps to detect and mitigate certain types of attacks, including Cross Site Scripting (XSS) and data injection attacks. These attacks are used for everything from data theft to site defacement or distribution of malware. CSP provides a set of standard HTTP headers that allow website owners to declare approved sources of content that browsers should be allowed to load on that page — covered types are JavaScript, CSS, HTML frames, fonts, images and embeddable objects such as Java applets, ActiveX, audio and video files.</p>
+                <p><strong>Solution:</strong> Ensure that your web server, application server, load balancer, etc. is configured to set the Content-Security-Policy header.</p>
+                <p><strong>Reference:</strong> https://developer.mozilla.org/en-US/docs/Web/Security/CSP/Introducing_Content_Security_Policy
+https://cheatsheetseries.owasp.org/cheatsheets/Content_Security_Policy_Cheat_Sheet.html
+https://www.w3.org/TR/CSP/
+https://w3c.github.io/webappsec-csp/
+https://web.dev/articles/csp
+https://caniuse.com/#feat=contentsecuritypolicy
+https://content-security-policy.com/</p>
+                <p><strong>Parameter:</strong> </p>
+                <p><strong>Evidence:</strong> </p>
+                <p><strong>CWE ID:</strong> 693</p>
+                <p><strong>WASC ID:</strong> 15</p>
+            </div>
+            
+            <div class="alert medium">
+                <h3><span class="risk-medium">Medium</span>: Content Security Policy (CSP) Header Not Set</h3>
+                <p><strong>URL:</strong> https://www.udemy.com/sitemap.xml</p>
+                <p><strong>Description:</strong> Content Security Policy (CSP) is an added layer of security that helps to detect and mitigate certain types of attacks, including Cross Site Scripting (XSS) and data injection attacks. These attacks are used for everything from data theft to site defacement or distribution of malware. CSP provides a set of standard HTTP headers that allow website owners to declare approved sources of content that browsers should be allowed to load on that page — covered types are JavaScript, CSS, HTML frames, fonts, images and embeddable objects such as Java applets, ActiveX, audio and video files.</p>
+                <p><strong>Solution:</strong> Ensure that your web server, application server, load balancer, etc. is configured to set the Content-Security-Policy header.</p>
+                <p><strong>Reference:</strong> https://developer.mozilla.org/en-US/docs/Web/Security/CSP/Introducing_Content_Security_Policy
+https://cheatsheetseries.owasp.org/cheatsheets/Content_Security_Policy_Cheat_Sheet.html
+https://www.w3.org/TR/CSP/
+https://w3c.github.io/webappsec-csp/
+https://web.dev/articles/csp
+https://caniuse.com/#feat=contentsecuritypolicy
+https://content-security-policy.com/</p>
+                <p><strong>Parameter:</strong> </p>
+                <p><strong>Evidence:</strong> </p>
+                <p><strong>CWE ID:</strong> 693</p>
+                <p><strong>WASC ID:</strong> 15</p>
+            </div>
+            
+            <div class="alert low">
+                <h3><span class="risk-low">Low</span>: Cookie with SameSite Attribute None</h3>
+                <p><strong>URL:</strong> https://www.udemy.com/</p>
+                <p><strong>Description:</strong> A cookie has been set with its SameSite attribute set to "none", which means that the cookie can be sent as a result of a 'cross-site' request. The SameSite attribute is an effective counter measure to cross-site request forgery, cross-site script inclusion, and timing attacks.</p>
+                <p><strong>Solution:</strong> Ensure that the SameSite attribute is set to either 'lax' or ideally 'strict' for all cookies.</p>
+                <p><strong>Reference:</strong> https://tools.ietf.org/html/draft-ietf-httpbis-cookie-same-site</p>
+                <p><strong>Parameter:</strong> __cf_bm</p>
+                <p><strong>Evidence:</strong> Set-Cookie: __cf_bm</p>
+                <p><strong>CWE ID:</strong> 1275</p>
+                <p><strong>WASC ID:</strong> 13</p>
+            </div>
+            
+            <div class="alert low">
+                <h3><span class="risk-low">Low</span>: Cookie with SameSite Attribute None</h3>
+                <p><strong>URL:</strong> https://www.udemy.com/sitemap.xml</p>
+                <p><strong>Description:</strong> A cookie has been set with its SameSite attribute set to "none", which means that the cookie can be sent as a result of a 'cross-site' request. The SameSite attribute is an effective counter measure to cross-site request forgery, cross-site script inclusion, and timing attacks.</p>
+                <p><strong>Solution:</strong> Ensure that the SameSite attribute is set to either 'lax' or ideally 'strict' for all cookies.</p>
+                <p><strong>Reference:</strong> https://tools.ietf.org/html/draft-ietf-httpbis-cookie-same-site</p>
+                <p><strong>Parameter:</strong> __cf_bm</p>
+                <p><strong>Evidence:</strong> Set-Cookie: __cf_bm</p>
+                <p><strong>CWE ID:</strong> 1275</p>
+                <p><strong>WASC ID:</strong> 13</p>
+            </div>
+            
+            <div class="alert low">
+                <h3><span class="risk-low">Low</span>: Cookie with SameSite Attribute None</h3>
+                <p><strong>URL:</strong> https://www.udemy.com/robots.txt</p>
+                <p><strong>Description:</strong> A cookie has been set with its SameSite attribute set to "none", which means that the cookie can be sent as a result of a 'cross-site' request. The SameSite attribute is an effective counter measure to cross-site request forgery, cross-site script inclusion, and timing attacks.</p>
+                <p><strong>Solution:</strong> Ensure that the SameSite attribute is set to either 'lax' or ideally 'strict' for all cookies.</p>
+                <p><strong>Reference:</strong> https://tools.ietf.org/html/draft-ietf-httpbis-cookie-same-site</p>
+                <p><strong>Parameter:</strong> __cf_bm</p>
+                <p><strong>Evidence:</strong> Set-Cookie: __cf_bm</p>
+                <p><strong>CWE ID:</strong> 1275</p>
+                <p><strong>WASC ID:</strong> 13</p>
+            </div>
+            
+            <div class="alert low">
+                <h3><span class="risk-low">Low</span>: Strict-Transport-Security Header Not Set</h3>
+                <p><strong>URL:</strong> https://www.udemy.com/robots.txt</p>
+                <p><strong>Description:</strong> HTTP Strict Transport Security (HSTS) is a web security policy mechanism whereby a web server declares that complying user agents (such as a web browser) are to interact with it using only secure HTTPS connections (i.e. HTTP layered over TLS/SSL). HSTS is an IETF standards track protocol and is specified in RFC 6797.</p>
+                <p><strong>Solution:</strong> Ensure that your web server, application server, load balancer, etc. is configured to enforce Strict-Transport-Security.</p>
+                <p><strong>Reference:</strong> https://cheatsheetseries.owasp.org/cheatsheets/HTTP_Strict_Transport_Security_Cheat_Sheet.html
+https://owasp.org/www-community/Security_Headers
+https://en.wikipedia.org/wiki/HTTP_Strict_Transport_Security
+https://caniuse.com/stricttransportsecurity
+https://datatracker.ietf.org/doc/html/rfc6797</p>
+                <p><strong>Parameter:</strong> </p>
+                <p><strong>Evidence:</strong> </p>
+                <p><strong>CWE ID:</strong> 319</p>
+                <p><strong>WASC ID:</strong> 15</p>
+            </div>
+            
+            <div class="alert low">
+                <h3><span class="risk-low">Low</span>: Strict-Transport-Security Header Not Set</h3>
+                <p><strong>URL:</strong> https://www.udemy.com/sitemap.xml</p>
+                <p><strong>Description:</strong> HTTP Strict Transport Security (HSTS) is a web security policy mechanism whereby a web server declares that complying user agents (such as a web browser) are to interact with it using only secure HTTPS connections (i.e. HTTP layered over TLS/SSL). HSTS is an IETF standards track protocol and is specified in RFC 6797.</p>
+                <p><strong>Solution:</strong> Ensure that your web server, application server, load balancer, etc. is configured to enforce Strict-Transport-Security.</p>
+                <p><strong>Reference:</strong> https://cheatsheetseries.owasp.org/cheatsheets/HTTP_Strict_Transport_Security_Cheat_Sheet.html
+https://owasp.org/www-community/Security_Headers
+https://en.wikipedia.org/wiki/HTTP_Strict_Transport_Security
+https://caniuse.com/stricttransportsecurity
+https://datatracker.ietf.org/doc/html/rfc6797</p>
+                <p><strong>Parameter:</strong> </p>
+                <p><strong>Evidence:</strong> </p>
+                <p><strong>CWE ID:</strong> 319</p>
+                <p><strong>WASC ID:</strong> 15</p>
+            </div>
+            
+            <div class="alert low">
+                <h3><span class="risk-low">Low</span>: Strict-Transport-Security Header Not Set</h3>
+                <p><strong>URL:</strong> https://www.udemy.com/</p>
+                <p><strong>Description:</strong> HTTP Strict Transport Security (HSTS) is a web security policy mechanism whereby a web server declares that complying user agents (such as a web browser) are to interact with it using only secure HTTPS connections (i.e. HTTP layered over TLS/SSL). HSTS is an IETF standards track protocol and is specified in RFC 6797.</p>
+                <p><strong>Solution:</strong> Ensure that your web server, application server, load balancer, etc. is configured to enforce Strict-Transport-Security.</p>
+                <p><strong>Reference:</strong> https://cheatsheetseries.owasp.org/cheatsheets/HTTP_Strict_Transport_Security_Cheat_Sheet.html
+https://owasp.org/www-community/Security_Headers
+https://en.wikipedia.org/wiki/HTTP_Strict_Transport_Security
+https://caniuse.com/stricttransportsecurity
+https://datatracker.ietf.org/doc/html/rfc6797</p>
+                <p><strong>Parameter:</strong> </p>
+                <p><strong>Evidence:</strong> </p>
+                <p><strong>CWE ID:</strong> 319</p>
+                <p><strong>WASC ID:</strong> 15</p>
+            </div>
+            
+            <div class="alert low">
+                <h3><span class="risk-low">Low</span>: Timestamp Disclosure - Unix</h3>
+                <p><strong>URL:</strong> https://www.udemy.com/sitemap.xml</p>
+                <p><strong>Description:</strong> A timestamp was disclosed by the application/web server. - Unix</p>
+                <p><strong>Solution:</strong> Manually confirm that the timestamp data is not sensitive, and that the data cannot be aggregated to disclose exploitable patterns.</p>
+                <p><strong>Reference:</strong> https://cwe.mitre.org/data/definitions/200.html</p>
+                <p><strong>Parameter:</strong> Set-Cookie</p>
+                <p><strong>Evidence:</strong> 1755819443</p>
+                <p><strong>CWE ID:</strong> 497</p>
+                <p><strong>WASC ID:</strong> 13</p>
+            </div>
+            
+            <div class="alert low">
+                <h3><span class="risk-low">Low</span>: Timestamp Disclosure - Unix</h3>
+                <p><strong>URL:</strong> https://www.udemy.com/robots.txt</p>
+                <p><strong>Description:</strong> A timestamp was disclosed by the application/web server. - Unix</p>
+                <p><strong>Solution:</strong> Manually confirm that the timestamp data is not sensitive, and that the data cannot be aggregated to disclose exploitable patterns.</p>
+                <p><strong>Reference:</strong> https://cwe.mitre.org/data/definitions/200.html</p>
+                <p><strong>Parameter:</strong> Set-Cookie</p>
+                <p><strong>Evidence:</strong> 1755819443</p>
+                <p><strong>CWE ID:</strong> 497</p>
+                <p><strong>WASC ID:</strong> 13</p>
+            </div>
+            
+            <div class="alert low">
+                <h3><span class="risk-low">Low</span>: Timestamp Disclosure - Unix</h3>
+                <p><strong>URL:</strong> https://www.udemy.com/</p>
+                <p><strong>Description:</strong> A timestamp was disclosed by the application/web server. - Unix</p>
+                <p><strong>Solution:</strong> Manually confirm that the timestamp data is not sensitive, and that the data cannot be aggregated to disclose exploitable patterns.</p>
+                <p><strong>Reference:</strong> https://cwe.mitre.org/data/definitions/200.html</p>
+                <p><strong>Parameter:</strong> Set-Cookie</p>
+                <p><strong>Evidence:</strong> 1755819443</p>
+                <p><strong>CWE ID:</strong> 497</p>
+                <p><strong>WASC ID:</strong> 13</p>
+            </div>
+            
+            <div class="alert low">
+                <h3><span class="risk-low">Low</span>: Timestamp Disclosure - Unix</h3>
+                <p><strong>URL:</strong> https://www.udemy.com/sitemap.xml</p>
+                <p><strong>Description:</strong> A timestamp was disclosed by the application/web server. - Unix</p>
+                <p><strong>Solution:</strong> Manually confirm that the timestamp data is not sensitive, and that the data cannot be aggregated to disclose exploitable patterns.</p>
+                <p><strong>Reference:</strong> https://cwe.mitre.org/data/definitions/200.html</p>
+                <p><strong>Parameter:</strong> </p>
+                <p><strong>Evidence:</strong> 1755819443</p>
+                <p><strong>CWE ID:</strong> 497</p>
+                <p><strong>WASC ID:</strong> 13</p>
+            </div>
+            
+            <div class="alert low">
+                <h3><span class="risk-low">Low</span>: Timestamp Disclosure - Unix</h3>
+                <p><strong>URL:</strong> https://www.udemy.com/robots.txt</p>
+                <p><strong>Description:</strong> A timestamp was disclosed by the application/web server. - Unix</p>
+                <p><strong>Solution:</strong> Manually confirm that the timestamp data is not sensitive, and that the data cannot be aggregated to disclose exploitable patterns.</p>
+                <p><strong>Reference:</strong> https://cwe.mitre.org/data/definitions/200.html</p>
+                <p><strong>Parameter:</strong> </p>
+                <p><strong>Evidence:</strong> 1755819443</p>
+                <p><strong>CWE ID:</strong> 497</p>
+                <p><strong>WASC ID:</strong> 13</p>
+            </div>
+            
+            <div class="alert low">
+                <h3><span class="risk-low">Low</span>: Timestamp Disclosure - Unix</h3>
+                <p><strong>URL:</strong> https://www.udemy.com/</p>
+                <p><strong>Description:</strong> A timestamp was disclosed by the application/web server. - Unix</p>
+                <p><strong>Solution:</strong> Manually confirm that the timestamp data is not sensitive, and that the data cannot be aggregated to disclose exploitable patterns.</p>
+                <p><strong>Reference:</strong> https://cwe.mitre.org/data/definitions/200.html</p>
+                <p><strong>Parameter:</strong> </p>
+                <p><strong>Evidence:</strong> 1755819443</p>
+                <p><strong>CWE ID:</strong> 497</p>
+                <p><strong>WASC ID:</strong> 13</p>
+            </div>
+            
+            <div class="alert informational">
+                <h3><span class="risk-informational">Informational</span>: Loosely Scoped Cookie</h3>
+                <p><strong>URL:</strong> https://www.udemy.com/robots.txt</p>
+                <p><strong>Description:</strong> Cookies can be scoped by domain or path. This check is only concerned with domain scope.The domain scope applied to a cookie determines which domains can access it. For example, a cookie can be scoped strictly to a subdomain e.g. www.nottrusted.com, or loosely scoped to a parent domain e.g. nottrusted.com. In the latter case, any subdomain of nottrusted.com can access the cookie. Loosely scoped cookies are common in mega-applications like google.com and live.com. Cookies set from a subdomain like app.foo.bar are transmitted only to that domain by the browser. However, cookies scoped to a parent-level domain may be transmitted to the parent, or any subdomain of the parent.</p>
+                <p><strong>Solution:</strong> Always scope cookies to a FQDN (Fully Qualified Domain Name).</p>
+                <p><strong>Reference:</strong> https://tools.ietf.org/html/rfc6265#section-4.1
+https://owasp.org/www-project-web-security-testing-guide/v41/4-Web_Application_Security_Testing/06-Session_Management_Testing/02-Testing_for_Cookies_Attributes.html
+https://code.google.com/p/browsersec/wiki/Part2#Same-origin_policy_for_cookies</p>
+                <p><strong>Parameter:</strong> </p>
+                <p><strong>Evidence:</strong> </p>
+                <p><strong>CWE ID:</strong> 565</p>
+                <p><strong>WASC ID:</strong> 15</p>
+            </div>
+            
+            <div class="alert informational">
+                <h3><span class="risk-informational">Informational</span>: Loosely Scoped Cookie</h3>
+                <p><strong>URL:</strong> https://www.udemy.com/sitemap.xml</p>
+                <p><strong>Description:</strong> Cookies can be scoped by domain or path. This check is only concerned with domain scope.The domain scope applied to a cookie determines which domains can access it. For example, a cookie can be scoped strictly to a subdomain e.g. www.nottrusted.com, or loosely scoped to a parent domain e.g. nottrusted.com. In the latter case, any subdomain of nottrusted.com can access the cookie. Loosely scoped cookies are common in mega-applications like google.com and live.com. Cookies set from a subdomain like app.foo.bar are transmitted only to that domain by the browser. However, cookies scoped to a parent-level domain may be transmitted to the parent, or any subdomain of the parent.</p>
+                <p><strong>Solution:</strong> Always scope cookies to a FQDN (Fully Qualified Domain Name).</p>
+                <p><strong>Reference:</strong> https://tools.ietf.org/html/rfc6265#section-4.1
+https://owasp.org/www-project-web-security-testing-guide/v41/4-Web_Application_Security_Testing/06-Session_Management_Testing/02-Testing_for_Cookies_Attributes.html
+https://code.google.com/p/browsersec/wiki/Part2#Same-origin_policy_for_cookies</p>
+                <p><strong>Parameter:</strong> </p>
+                <p><strong>Evidence:</strong> </p>
+                <p><strong>CWE ID:</strong> 565</p>
+                <p><strong>WASC ID:</strong> 15</p>
+            </div>
+            
+            <div class="alert informational">
+                <h3><span class="risk-informational">Informational</span>: Loosely Scoped Cookie</h3>
+                <p><strong>URL:</strong> https://www.udemy.com/</p>
+                <p><strong>Description:</strong> Cookies can be scoped by domain or path. This check is only concerned with domain scope.The domain scope applied to a cookie determines which domains can access it. For example, a cookie can be scoped strictly to a subdomain e.g. www.nottrusted.com, or loosely scoped to a parent domain e.g. nottrusted.com. In the latter case, any subdomain of nottrusted.com can access the cookie. Loosely scoped cookies are common in mega-applications like google.com and live.com. Cookies set from a subdomain like app.foo.bar are transmitted only to that domain by the browser. However, cookies scoped to a parent-level domain may be transmitted to the parent, or any subdomain of the parent.</p>
+                <p><strong>Solution:</strong> Always scope cookies to a FQDN (Fully Qualified Domain Name).</p>
+                <p><strong>Reference:</strong> https://tools.ietf.org/html/rfc6265#section-4.1
+https://owasp.org/www-project-web-security-testing-guide/v41/4-Web_Application_Security_Testing/06-Session_Management_Testing/02-Testing_for_Cookies_Attributes.html
+https://code.google.com/p/browsersec/wiki/Part2#Same-origin_policy_for_cookies</p>
+                <p><strong>Parameter:</strong> </p>
+                <p><strong>Evidence:</strong> </p>
+                <p><strong>CWE ID:</strong> 565</p>
+                <p><strong>WASC ID:</strong> 15</p>
+            </div>
+            
+            <div class="alert informational">
+                <h3><span class="risk-informational">Informational</span>: Modern Web Application</h3>
+                <p><strong>URL:</strong> https://www.udemy.com/</p>
+                <p><strong>Description:</strong> The application appears to be a modern web application. If you need to explore it automatically then the Ajax Spider may well be more effective than the standard one.</p>
+                <p><strong>Solution:</strong> This is an informational alert and so no changes are required.</p>
+                <p><strong>Reference:</strong> </p>
+                <p><strong>Parameter:</strong> </p>
+                <p><strong>Evidence:</strong> <script>(function(){window._cf_chl_opt = {cvId: '3',cZone: 'www.udemy.com',cType: 'managed',cRay: '972df544ed75b2bb',cH: 'LhRo3IXMLJZK5RKFH0hESG50laBgbVbLv7XZ2CYHW7Y-1755819443-1.2.1.1-oEy.JO_V4VMolIGa88XMTZRNmd24.hGlsN9miBoQGH8YWVqU7GI8vk7W90p0ZjRm',cUPMDTk:"\/?__cf_chl_tk=KugAwZ8SQDZ3.L8aKEZtuSTHWqZnSxS3mO.aZMwnEhk-1755819443-1.0.1.1-lzddwYNXBakoKtCFjgB1RL3j3d34C8HDZ4xxbx2hqQc",cFPWv: 'b',cITimeS: '1755819443',cTplC:0,cTplV:5,cTplB: 'cf',fa:"\/?__cf_chl_f_tk=KugAwZ8SQDZ3.L8aKEZtuSTHWqZnSxS3mO.aZMwnEhk-1755819443-1.0.1.1-lzddwYNXBakoKtCFjgB1RL3j3d34C8HDZ4xxbx2hqQc",md: 'nKfKddqcnJpqwEy5Mo2s0lPJRmBOMxci6ZkZhm7w47I-1755819443-1.2.1.1-0_IBkqETRKmawM0njWRHYI.a6IRnWunk7b6dG0v2cf8Numl18Rnuca1IsIchNeTgl4X8FCOqCLecO1cC8hs3dE58msi3dVJ5nVyePJPhhX_sWdWAfTAfXCbWeJcgA.xqYf_lRg63mqiQOincatfMGP8sXqIAX4mbkUAyo2YeKg79AbLFeaghZHe1qXRt1hHnrp_bQ5n3HSjKa2yuXN5dwAZ0l6JUojYcHFWhtizV.OEAJ8XitseOE3fP3gB3HLXBm9EAB6TwnFDvMkaf5AHz_X2OmEI6AbBTXgGUzbnADctM0YWZTGGmaaKMPZKqMD4J9IsfRG1zok.ja4R_ZKx4k4_fmRX265PYgUArbWEpUCX8KxOuMOjmqLYcHnEelU2cxZK2MfjfiEFNt1SLF.XU9610ophydcLk4cULtw6_uckvr39XgAqUdqS43pri0nGF5C0n3IOYI3lGXjpQSONOFKoaFiFsDYinKBuyVRtR0PFVy5YKVdcLqAqQIvcACVnK3foNWkCaG3xfVMHcTtoSh4gvMtYZkXqD59jnk3nX._gQNJdiN0CyZHPYicEzlTxet7T1CRkBx.mAtsalmwc4Rhw.GDwAEaQ9N4oB9GjIBMhxcMhBh3J4nicb28jF5tTCyhXRgMqKhSMgTQ5ee8Lo.XtYsX69i5xHNEpbYgHNepeHqLVlHQYC8KUlxFtz5kyZbIKbm.QmUoyiRnyB1Zw0xZKHTUGLxTiQ39e9bkUY8BwiBv0F3w7FSqPC4juBDNCvg6PrdVi85EJIhmYLAaubAH3_1SxwukvmbtJKGogGIkLF1gRf_f6nuNHH1cUZt_MhgHXZqsOuYxBnC2J6YTYrBtZynTDhWRfJZy_goDVbIw7AbTrAVWOCnJof2RxSB1eU47LyXLomArShequywHD4IPwrCR4tF6HTiKfCK.TLhXvQaUH7zAx15.ioqQELnvsffZ.RSmLu5_zHj6wrBufOTjp2VAoB3gYXvo5DVDW8ShuBABBOZeyvz2OeCRL2sFwVEiTAX9v0Y.nFvHymDbl80vS2.AzZS__Np09imouEPAkCjiiyJIHLtmdB7z5SQcKEk_eWzXa9eKuXDR2KGv4bbw',mdrd: 'j.aUYnDvSo.Q.YfjllkxzCdIkw_yBOMxoTbdHInC_eo-1755819443-1.2.1.1-QXE9hBtZ34jgtWFUUBKcy_2wTYEWTVZ9EuHLirEqf_hG2r9b1UZrgOV26h7bpeu2whe6Ozx9tIw7N1qhWswY_flK16XMlo8MHSf602vhei3Q_9umrTXqnAkxXfaywSm6mM9IEvz.BNMSdEi66Ej1FacZtUvMkoEIXL1FsqKaGf0cIxg1kez50uqd5MqebnjHir8Wd9.zfeOoSBGyDxz2IkSNjqpvA_8hSubpxY3atraPCMTNpgWafhA0xhrzEC8GDc_2jnzNNmOmtrtle8qqxGY1j4sbVqoVYqw35Q.TuM9RL8sbacsUji3BAj39X8Y5SkEGd7v.LlTgPq22KQqdAY9sjiOkl5e0XLOw7xdqSYW75lBp4c3XnGyfbM6l60obMMkrqOjcRO57l6l3ASNlsKG2AqLPChbxL2MELE8z0Hr3s1yg0jgwq8x1LXcwe6iKVC.6sonvsULrSB2MpKZv41d1CZD3a1BSq478RAX._jdUS92T6YAnsMSi1o1VhrO72PgMs9zxY4F__OVmhIWXeX_7Ol5SVbs.HH8tvdp14eRPum2HVCG.6vSmucSnEGvbM5f9i8bAxYrqDKoYaKBk_MxwO4FevE71O2nQlsQyzDTkeJs2np0CX25er9pHV9N8MT6d8WyUZJeIJLH.RH.5qvizOebrMd2bgBt7GXY9G37Csf.NolCDgdKe1_rUTHe1EHaAWFNVgQXNp0ySSWstnbHuiYy7DSYiyo_H8qIJV.q_kh6HevJh4_d.9SRMsiNabgBDvNzkOJaR9_vpk_yPMa2MEth8DISGXdGrhixwtLuO77oSEIxLkhiDWe5v_dmb_HAROV4bpSa4IFXxllWmd2.Gd2RMBOhfqAjDVewOEdI6hpu_b_0ZD6VLG15BhLb.BSSztnpDRYtIy8lms64gW__cNaa0JiGIdeydq1W5KWNi50YtaSrQ_WNUc00KAb98s4hlfaoJcQm6hLk2yM2KlvdeaAwivQvZVkqLJY3bUJcIf9yoBlD21WAuslyuM6dNs1BDsRGDCHGsrIaOUXqxwmLzftXcq.Y4CJcHOX3Jz83JgJ_GI0C1PjRlRxhtQ69NIxwB68XD_4gY6Qw..VmJph8ms0kYiDp2Wb.xZejxXaf4p6QPQXyyF2M8xeyrQh9n1qMtq_RjKjqujUsvrG7kxJ2eyD_Iywk793COa2Q2d2Msusjr4gIwCVQr6gjYIbJbraMJ1bNNana_ZGyrNiPLbzHgDcPGzMiIR_8iKL_R0HZa2yCLQTiuPy7NrVjkpYm8foy5YijIe49Po2ee8p7JLEVpRK0EUfR9rrlrYhpY4a89omWejvuHmjCa1.DqKv_u1XcOCWgDpfC_MNl8ZP34bbRQgBpXzwaNftv34DNaUE7C_IXoWnn3ELz_hYF17498bOWseOCSi4Xqd3kAScytanr8KCx1WJFeuy9g1GogqMQaT8_HTLzR16VagbI9jXVQzTxCozQb6jG9IVwLlSl3U.ooTwqWbI8QR1tD64Q946E.QWyP.AK21AfBAPfsuRG.lFc4gy0oSns3ldKid8EBMNBvn28u1L8l88mp7rnG48lS1IZdS78DWmP_vL58XNLnMywogIhSuMecpSlReKvzik7JHHIGl_EfiHsBw5HxPzJB2DsWQ_OxW61Qdp35c6d6JvGWvZu8rLGpa_RG.J8pwhD7HoxuqRG7ZU9Kfrp1zY_cPNV9ghGl0YdkFtbvCnc15DsIfqFnp5ejIX.h26mxj700UE57mmaSofzZ_IRYSSmpzO9qhbzT4EeYL_Odd.jQjVDUudL1oP_voVz9.rT5Bbqyo_W9zox0fD5f3wDQxCqmBBxUz2eV9Zb7dDZqO91E..ojem7Nre4rysEjmvHXf4u6gIq1kWIqm4Ud_89FGHqv.qPur46e.UL_E23bmK08uMI737hIv05klH8VSVu8skur1mku5qhLdJVp2njlI_bSXAz.3HfpgwY6sA2mt17KxOBWFRwyqHYHFw3VEyB3kKM3aC2W.CfkAApJ4OXsWPELNEzH1n5LZd8DdYRVSyguxDaYdiz3jXQ9FjD0SSG6X9dScn9b1b3GrsqG9fjPZuRuY4TJ1DBFQ2qwX8e5_PPJp8POdnfctnmjt1t4Z5n_OOoWUc4OIB0G.lKIKp03YZ6lgv81h7aAPDkXXJq1h3bRn_IBhhqhK4tLVTHcTh6POmlCn5OysHRSkG2Va.NBDOZl_57Q9qPuaVgdC.n36FPfF_PrTg966dBzjJRvXRm6JmQGeFR6XTzLYXt6AHjI8mD5dn7wg8Mngo4ZSiWohvP1oJ40W627ZFJB.SlyVMFPV_OONyWJ8Yw2VuLtUvQOX8sqDcSjLjiHW.zjKEXJzme_lzLUDelkvu4E_Ia9PP6WDw6QJN7Itzar9RIoajONQUdFz_NDPGfbmg.7yi3jr0Rg0gIIrgg.3NzeQ0bCnhT0SDYEXDYkFBxrCXoKd1NWAHDYmbg3ucO0iwq74at5U9huKCosZm3w8pMEiGDIvOsW3CtGBf_PlehViti1bsh0byA',};var a = document.createElement('script');a.src = '/cdn-cgi/challenge-platform/h/b/orchestrate/chl_page/v1?ray=972df544ed75b2bb';window._cf_chl_opt.cOgUHash = location.hash === '' && location.href.indexOf('#') !== -1 ? '#' : location.hash;window._cf_chl_opt.cOgUQuery = location.search === '' && location.href.slice(0, location.href.length - window._cf_chl_opt.cOgUHash.length).indexOf('?') !== -1 ? '?' : location.search;if (window.history && window.history.replaceState) {var ogU = location.pathname + window._cf_chl_opt.cOgUQuery + window._cf_chl_opt.cOgUHash;history.replaceState(null, null,"\/?__cf_chl_rt_tk=KugAwZ8SQDZ3.L8aKEZtuSTHWqZnSxS3mO.aZMwnEhk-1755819443-1.0.1.1-lzddwYNXBakoKtCFjgB1RL3j3d34C8HDZ4xxbx2hqQc"+ window._cf_chl_opt.cOgUHash);a.onload = function() {history.replaceState(null, null, ogU);}}document.getElementsByTagName('head')[0].appendChild(a);}());</script></p>
+                <p><strong>CWE ID:</strong> -1</p>
+                <p><strong>WASC ID:</strong> -1</p>
+            </div>
+            
+            <div class="alert informational">
+                <h3><span class="risk-informational">Informational</span>: Modern Web Application</h3>
+                <p><strong>URL:</strong> https://www.udemy.com/robots.txt</p>
+                <p><strong>Description:</strong> The application appears to be a modern web application. If you need to explore it automatically then the Ajax Spider may well be more effective than the standard one.</p>
+                <p><strong>Solution:</strong> This is an informational alert and so no changes are required.</p>
+                <p><strong>Reference:</strong> </p>
+                <p><strong>Parameter:</strong> </p>
+                <p><strong>Evidence:</strong> <script>(function(){window._cf_chl_opt = {cvId: '3',cZone: 'www.udemy.com',cType: 'managed',cRay: '972df544dba4b2c9',cH: '6Lot6QWFS0t746xGZu23Acfv.andedBeXckmEVTYaTM-1755819443-1.2.1.1-fNgC2Oh16M2CnFfY8.Qrj0FwoRE.lKm0NKL3xDiSDxlvc9YdSX1F6bzUq.8ZED6m',cUPMDTk:"\/robots.txt?__cf_chl_tk=eEAgCO_ybaaHzT5oHZ6Ol7ExhKO3PC8s.0FuJsmL3mg-1755819443-1.0.1.1-I9t.u3NTJf.v70owSYI_lHKdmcDGxoSkp4y8dfX49xA",cFPWv: 'b',cITimeS: '1755819443',cTplC:0,cTplV:5,cTplB: 'cf',fa:"\/robots.txt?__cf_chl_f_tk=eEAgCO_ybaaHzT5oHZ6Ol7ExhKO3PC8s.0FuJsmL3mg-1755819443-1.0.1.1-I9t.u3NTJf.v70owSYI_lHKdmcDGxoSkp4y8dfX49xA",md: 'dMD8K6BOh0Ro30Y4lSjcf9Nzd_KSXtFvBly2k4cX.XI-1755819443-1.2.1.1-2F.c3JEv_SX_oTRtOO5srbpdfiU6GNwJcUZ9_KTCfCumQZLYsQzmN.rBPobnXyQWJK2CXwV73OA0An5eOv.k2wy9Aq98AjgmwRn2Niw_jFc62OjEVwT8KCErgPToovtw.EDpHy3xQs22UCUevORBjmSLuv7xfJR6qq8fhvYeTdGzA7nC75QzACkzjvKkovI3pP7EeSi4Z0QJj5Xsm8YLQi6lqlSpcLn6f8uOUJpMuDzNvTuQi8iQDloIzr5khdqFeKrCdfWAH_pzCx0uI3yut98RvDHTgtrXJ2ibHWzxL_JC21L6HWQW8OX0wywHwwAcWMyYQUWa4N23CNlcGFxoEkg1i2TkE2ca1D3lR4a1FkVIsQ3wt2ZiWHp94rwwfEqZjYaIc90ebSb56Zd.HrGHpjvvgP7bZVoQhPcPZm4LQ1DHFnXHtyvAow1Afbta2ZJAeFbLgAoI0Z0re4ZMEMGPsz2csVsPsWYg3FYKgn7EW82G644VJpTpe415ou6SFYlAffWzVoioINdSDFlvZyGE.iaW9dKGBNeN5Ume1JlSm039A4N6FyVrBow.tI69Fb.qgqCypSZD0tWVE6hRfqdjIbrtUOBogHE7xsltNY5JHSSpNCpFYSZoiHp7s..Pm950fidMOs9Q1bB86qmSbxQkWymntjOTSj.T1y2BJdokdtUtf.fY5V.R4y4wIwrlmLM0dWgWOVtYaioqzZiFv.pqAfIJwVK_dTJLI8XO7rY1sRhFzGjwmAh7j0kbVRMrvcMjbSTNQX9Yw0IpZRNqQ3xmmpK0u4SvBhJWGQgkND3xpHTQd_7bLmrzEu8s3i62R2bjVR5aHu6fW8LP0qn81EYzPR_nZbng1Jl8lQHQPBscYXSuMmJY5UfmBz0KLDb9PMZeTPj9vrdEug1NQA83ngkbtnYVMUzNGiMEspCp5k1.0ZQpEBEyTouSMi2tuIgjI00iuZkVk1xah5XmACe0B..X7OhiXNeGcEgO14AWeIpzEM2FcqIYNmdNVYUb6WW3qAlLaISny8oA0gs624c8GcooHUhl.RaBE_B3zp68HwWmJp3hWpx.f82FfRXVlKaDjXplmHGzK7QhEA32kLEOMzETPA',mdrd: 'rtup2AsdGIFgE45tcISVcfEi.sZMNT6cZclkmelhJuc-1755819443-1.2.1.1-2FoyvZ6uKInC1sSF_hm9MyIUieCCMssxXNY5RXXLextvBtvkU.LbzN7cqLCadZV2n.jNCVfhi6Zu5jvjrZlzU8Ke2b23frAGulPGOqr8eWBxiJ0do_XmM_41Tg.6x8v26_7nzo5Tli60WPpU_qAiksVndkYcpX_f3a7b2G4nVuGI6Fc2xnNSk5frKsiWAj3FQPb1hT5khw2a0WcR5IoggBnkE2pPKUJIOeMJVn5zIU7YSyGrkMzTIrD.rHhO1yfW2zciI7_JoNzieWmHvzHb8DY.NT.gULKZEz1BvxW87__ThS0dR_lEeOxaj7za733guZ5nDeP9j8.4371tvfkUJ9LqjvHvfkacCPd1GJWQYBFbCBJG_GfCVVZufaYE4xe.dbTdrRhXjr2b9eUsJ4rv97ZPHl0zAgs5Lp.pRmoNuJo8pxJye2CFqeJpKLTgiHPm0hCa_Kq7tP0O4FBOvlwY0p_.4itmzLbU7T6JoeHatVRHazMal_N9ebDVHCLC2wVbaFnYR4eg5LQ6TVvIkl1f66_RBHHnThkPmEyrjiT8kPd2xCHZkY9z3yo9lAj1xndjIDrvLvefFxyixQYG5xeZ_EiqIJATjIsN_GnKb0cfNWx6TY5TGWU6uTsGFlV0N0kOBOeOO0n1QDJhBEjI0QJuMnccq2ztsuza2OwMLYIj2AgIGcs7YDE5ZZK8V7CmBb6e_b358DFtA39RnF0MExbRis86zTIWrvJo6XSj8OFGr3BWzkcmuy0APROxV8Widk7Pm53RIBLV4cB5QxnWLzR7oWDPYDtZVji11OCdThKjcnSqD.YAzRS_kVUhPR4pzT.DRjs2UoyZtWZ09hc13lPwL4p9H_d7NB4dzEam16fPYwN2Vf.fFXg94gkNcZ4WVYHMd7crCV2ozA_KgBE6QB_WntKdJDMaofifTMwwp1xPrxqHTNdWNIvfGYH021PSjot9XPAAORumlfei4owP9t.uDbVdXj0WWnIDOWhH2hg33qfhPjoDdGoQl3IqY_XwOdcFUzcospbfR53Uox7gslcPxeILAdEu5zogtCnVWpbF7UGHlKvK6NNPFOvi4fszAHA5TVBMH.3jyqT5Y5p2_g8eWdwUg7QR6hIw8cpPnS8nz5BeqrCWkVvwFkgqiao3uL8LyhDLa0kw7Y3w3S_kMHGHdKA3_dN14uO_iyVz7t5OM7YqFPuQrBAPlIyK41BcNN1raxGpM_.nNwh7dzy8pdE57cY5Nv_fQmgM.OOMRABjvRULcfcB.1nUplPZ0y4QSmAnHn7dM98fj5HVbooAixgpPPlTocf93lMGTV2v1VzwspYSdwnJ4r.oNWLpENud8kFPqh4E0wla6Ed7DgU85t4LtElss3cpG2JtdGV2z1CkEPh9FTdzcP9MquIzYrjiC2alJYoCqOtrQ5gDC.hWK_274iGKyWFRT_VXuuuzLSMCyJCMcrHOqjya.I.G0RtqSRKPmaoat3fgH9TeI_yM3rh9y0nukMLSgA7D9OOIsI.kqSHSiHzY2yXx4oNzowvwD2jWV9PpJWpHrtP2krj.32Xv6KceD9RjRH1b4i.8KuFVRhNSbwUC7u35p71OkWPJKdloLpDPsFKOIhSalOydxtPY9Xh9EiPmYWoR2N005JdqERYS5asc21sTdcn2q2ilHMNNHHXNeUqd_uaVyAKxEvOKQiGuu.FzFuNcHdIchWc1DC1763lIXTqhyp606UQATeOFQF4A.NqFTgyH0ZpePWWNwjEX0FdH5NwMmO30PdZU_hcgd7YHsvs8irxGzypDUobFEReG.5KIGXKOiFHMgAHKz_.Ofs23AeFhZrmAhryKr0HFm419YTimE.JDWsenQtbGpEQQq0uGa2J1IIXarySYPOxquCTuGDKORW8Ggx1k5_5Ti.IcEeMeCEV1XssoY0HjOjm.JCqX8muQwvN4CZLnjm6qdUauOXK4.K2nA3nRcJtUh2anrxfGBLrLGWqlA5IEjs2P4dyus8.9OY84vctPv98ehTlf0dCjxtUx8roIzSlafx5dt8oaTMCr.16CHh2V9Pq1a4bDcb5tzEfBmtZc8TYFd6w7YLXGVSliETi2iVFkYiuo_O3_UhN5SLN2DYzINq7t9O_Kysn_FMWxjxMqyeG7QNH_HWOhcKNH28wwfJHRdJJdNRn48baidn9sL4PgmsKTzo4UJ9sD8tn5ParGP5oTFE_gLf.fMEKZpAuYShSivwh4M2he89Mq2Crud1SxAY4CZnW0TytTScrxxeCtOuolTFXRJfc.UADYC7a3SWxP4XQNbDPG9Pbx9170mqt8DOQSoPiwsPmIRlMBBvYtRuUN9CS0OXBfRxBHly6bGjNqqusb.LvCaIBqskhiLpu6Y8R3n6Vh0GxzcQpfjVstpjpyUIdf91D6WiALJzUZvoQrDC8P.XOJwCflrAjqSs2XSMofiKYJ6VquiwFrlZl3_nhZGZT7oPkUP1woSZdTVOLu2nlVSITOWY2iQaVLKZkCoqAAykso4h6esVxKnuPmGA',};var a = document.createElement('script');a.src = '/cdn-cgi/challenge-platform/h/b/orchestrate/chl_page/v1?ray=972df544dba4b2c9';window._cf_chl_opt.cOgUHash = location.hash === '' && location.href.indexOf('#') !== -1 ? '#' : location.hash;window._cf_chl_opt.cOgUQuery = location.search === '' && location.href.slice(0, location.href.length - window._cf_chl_opt.cOgUHash.length).indexOf('?') !== -1 ? '?' : location.search;if (window.history && window.history.replaceState) {var ogU = location.pathname + window._cf_chl_opt.cOgUQuery + window._cf_chl_opt.cOgUHash;history.replaceState(null, null,"\/robots.txt?__cf_chl_rt_tk=eEAgCO_ybaaHzT5oHZ6Ol7ExhKO3PC8s.0FuJsmL3mg-1755819443-1.0.1.1-I9t.u3NTJf.v70owSYI_lHKdmcDGxoSkp4y8dfX49xA"+ window._cf_chl_opt.cOgUHash);a.onload = function() {history.replaceState(null, null, ogU);}}document.getElementsByTagName('head')[0].appendChild(a);}());</script></p>
+                <p><strong>CWE ID:</strong> -1</p>
+                <p><strong>WASC ID:</strong> -1</p>
+            </div>
+            
+            <div class="alert informational">
+                <h3><span class="risk-informational">Informational</span>: Modern Web Application</h3>
+                <p><strong>URL:</strong> https://www.udemy.com/sitemap.xml</p>
+                <p><strong>Description:</strong> The application appears to be a modern web application. If you need to explore it automatically then the Ajax Spider may well be more effective than the standard one.</p>
+                <p><strong>Solution:</strong> This is an informational alert and so no changes are required.</p>
+                <p><strong>Reference:</strong> </p>
+                <p><strong>Parameter:</strong> </p>
+                <p><strong>Evidence:</strong> <script>(function(){window._cf_chl_opt = {cvId: '3',cZone: 'www.udemy.com',cType: 'managed',cRay: '972df544dba3b2c9',cH: '.LE1K7YL.kNDncazoEOMkGb0esD67U_q_Yz8CY0iWiU-1755819443-1.2.1.1-daaOamAyJcR88sxwoQc08RYnhfNiH7YXZOY81BiblaupNwYKGU7nU9fCOpNO1pWI',cUPMDTk:"\/sitemap.xml?__cf_chl_tk=Yvyikp30UbFbkGhvKwSFRYi1d.jK.1z454EKxHABGSI-1755819443-1.0.1.1-WgwY4uiLEN0r3W5FNOwcFTiTiPGua8QzmYrX5bRzCL4",cFPWv: 'b',cITimeS: '1755819443',cTplC:0,cTplV:5,cTplB: 'cf',fa:"\/sitemap.xml?__cf_chl_f_tk=Yvyikp30UbFbkGhvKwSFRYi1d.jK.1z454EKxHABGSI-1755819443-1.0.1.1-WgwY4uiLEN0r3W5FNOwcFTiTiPGua8QzmYrX5bRzCL4",md: '_mQ9o745N.G15EoGpqnz2beqesv2XdNXrT5PpoepE7g-1755819443-1.2.1.1-M_iyoMlOo5aWXumqd2vH2jivO9Pqo8eijIUi83srkKLaTKq0.zAqGrtKBhW9_XknDpJ5bmaMUspBz.Ft.B3S1dsWlQ2ySq5qCCVrZvWrO9KqsmIqiOyQ.YLrkE8JCMHA7xFcHbJ.vNh8XHHwoiIGMoCY9LUHTLi1fqP8PMMu_SCf126U6wh8ubxSUNO0ph9Sj84IS1ptXJBl9FP.2AfoNqc3sEaQI.QpP4TbThYBVHJ8QQJ8vL62eqTAPNiuwo2WmK6K2uMUAf0YNeThnCvM8AqfzmHi6wJUQhS8czYdHZPdZHQbWpqI1hwnk879wxEt0xRe.Pbwglvq3PSbl3COP1sjaJYt15S2aUdClwRmL1.Y9sUppaVDhb0MIZjPvOtOarWHoiH1H02df9ISJjbRqN83Pn8So46ymfDwPN1OnrGTg9qQ.RzMo7QlQ9GyLJU2EfQXlX8fMeMETA7Wr7fzEqVZ0UhLhfQDxyvYCmtppQOHOFyeqfCbaAZEQdgtSQdjnYVlZT46TsW3jCHOAsKE7HOilOjop4fLeFIGDHTLyeGW5rnnQ69t0tS08eyXFbTteoV3EC4Ko0sVGSH3mZhBOz9dFcde7g0oTUk9qUcf7VmTWqghgItGFoDOvqtra2jv03cuKrjuwINIsIhBzlkpkwDE671wRAsebg0_0A7P4OEbgai6.5jFFM96NyO569aMgPW.X7BhxWFN79S56khPxF5NjIwB70y3d4P1AyQ5T.KU4BUzhZeImbP.OFxTdTzULiYlpbGzh9ledqC6bxsNkjYvJ8pCXhssZ1KHS7kG3S6HUBu03AqWjdrafJ1HFXuBoo5q70sxV9b3avPitvY3_dciyFqiDBAaHFqcfexwNTS_rZFGr_lmyexMyx74ithgy_MTOFcboAOHth03orU6UM36e5moe8T2Kg5QTUVVoydWyn5GKAIjov6yIDS3vkIuQmiLTgTcHnm4FEv31FGpDgHbyeF3wojKVIq1oopM_JeF1jN9X8E1EBJ._iPFUc_yUQSwsnRjaBFaCZsiw_JZsONNyN9CwQePjqpWBTBY3Rzja1jqk1dOxEHSalqW3Jy8FgqJgkQZIeziX32CccaCiQ',mdrd: '9aDvunr6y7ifraA4C4dxAcAffn6O0Wr703FsOZ6lpYA-1755819443-1.2.1.1-uptA4jiOWNuoJfefBAlm.yT_ZR4TzfaocLZkjoD9BZjMyIvBO0WEIOoTQ9H_p80652XrFoBaU9lGBJx8q.lU.FsfSyIJ2o9KBznBOBFrWZQmLL8j0smSVZHGduFplH9givNhyMD0ttDveyVKDiGyErfHADidjg8taqEOUdElPEfYUh5mTekxY8sCKmSLIa3zP6_qxMFyIW9VfZs9AVu2xV_1MO_V6Stt5pnbMnOIBmdS98RjeLvsDZKmGCqKjutV43rwpgKz8NRfIgPkP.hTMDIzN7wLO2JnAfBSFPgh_thp6WdQHYuztAUkd8huyyPEoyL0AAt46saUA.vGh0XO22xl5vvjEnDz5poG_eViLXzbr.sVCKjhm2682m_8yZD.hChxID0kt.skRBK.aGHHCyBe.M6oFZjjVo8lJyq3YBE0FeDzQVR4QK.Q1zfW7vLv1iLwEDu6pTHWuw6014Y4AwM60jLcQ7yUIm.n84.394MT6XvRMQZ9EO65LPplSNN_hgR2Do8FTU0eEi0yidnFqoqwxAJ9HC51kKnzT9HPiqBOMzfFaDbNP.7QRGgsVWBWbPSPjgg613xueWRrppNFTy6zyMW376c0cV.1PthvdM90u5GXsWm5_KINozG4fVOnuV98ExEJGwQqFFidpp1vnmRpWr4.UHsMonGplphN_9YTHke1xLvrFMnax.1jgmxObqL0_qC5RvfWyi_Wly2yJOCFNOHHfBejwDDKCK6KbUVWfviz0nH4EFqjCZUFA6NM8emolBfABMCGUewLQPCu7wlFLSeuNYdTFBEesybWdmG8HEeIU7Amo1eJSq6O7Rl0jXTvh4Nn032wz4jRSw_u.jcq83RRXa1sWF3_q1Ynrd2BvsnT5jsSvQp0ESXpVjhjQ7nngzlVwAgMxaYAgipM_fzhv7QAvMcBddGRI.N5ywpvVSAM7IEwrvMn9wEWW7dAhfa7y8ft1Z4YQ1ElD6Di_8CznHF.cdQhpdyU.RLFRSZ97X9mhls5Ysil2omZoGQPwIn8Sy6cN_8qbLAkW7NcXmCwCe3jgPgN9gZAwZKwU6ljDs20v6Kx6o54QxHXI5CsPbobCxlUNFiO1C3CQ4BU7lag3K5Tthi8UhB_xX4zpW4iPpTZjj0PaxXRtcQYXZTwCN8V1burzG04gywWt1w8dNismyBwZ9o09h0Wt67_d5uFxdnhix6DduHK1ngoOf2cKD5_dzGJbgFiC_MWwpiHpu3mPHWI36a3N7SMjyMKDwLfj1NWSCpJTp87nRtMe5oQI9POz_ocfHGQv6bcQgL5kCl8y9JNmmLvRk5sMQ1ghcUl8mOAMdN24GKtDAszVITuOXjR8.XL0glqQ2raEXgGkFKwwSdseoiZ9HSPQ8bOg4l1R.Msq4areRON14tZOui2UVNvDTvtM0ZBxYIGl4YiH.prHI8optwOMIaQ2f8FJ05yCf3Z2uL77uyfqaUMu_4yUglsvqwpWpWgd1rIDEFlZ3GcHpl.HG4QGRLwh_swqvpFjA38SLyT54PL9CYIm2QF3iDy8F1uTr19y_U88X3MvIiG7JQbSxmyrAvsC7K1yJu0wyPHxvgLoydszjgDV6yBvi.YW4O.AMBvbAzZnHQpXh.Jwa4hx8.vPTxFIFvFWdD2OVl2CuZhPmnsTS3syRnQw3NC3lh4LEJjdkSAHQx3.z9x4fH18I.29RFOB_zjINrCHQRzK8m6qD8vi4t0p94ekBEtWDYUtwopHVoyzX6s6AlCOGA3KwcBEHDmx3PfFTYneXWw2v5DmSdtSJ2LHU9Dj96ts81WRu26w1M5dBVFVUkzh6fXVthfAXkayZ9qbvBp5y9zcd98kZ.u82xyMRxn72ooSwT6JV19LoMv8uVudIPjj0ReUZQfHlrawMFuplahpKpfNgP4p6p_69kWP4A8ec8mVmzbjP.L_ijnhoRHbmSm5fRq7VcsYudt8fCzpX3xY73RYgydZpJCU4gQUYpsjF1G6b61MZMICLh9xLFAepLYRXkURb1j8XQL9D6MSlVeD61dNL.5RP_PrEKqmshG9OiH3kUYAYTRYz8NwDMjW2SfrvzmdW2GvCojiu5aKxOHGJV9YOahzcI3cZ8JheQTDBhKoI1.BQGLYEiWyLelIWf5JZB4qcWwZb_BGkAck7GdcF8SJwOg7L2rx9fUIqESllGuXAiY8eX573PVJU_yIhL_1mLg3bEUEpuMAOx9lBv7q6x7X7dcPHmn5jrN.eptHiDl8yb4S3u274VZcfueFhcW5wEG4oqjXb.F3LdyeQQIsFQOQxMvRPoqTGbldVNyRlueD3OV4XscW4GeaZr1BPAx4lgGc2nEoM94q89DkIMpJ_gAi8bUFnLyO4H4O_SW9C.nxmsj.CLqHpTIMpsdF3vV9.RrFLPqNoh4XcPo7GCIc0cthf1PQgAZ__esjrPDJWTUNbjuycIOWq8af57HsCrmn.c_mz1hwVyELfAJcuDzs__RSKqwKkXSbB9zsD.CfBObMhn.dzHDrPFcBoCl8Co0zUsOjY5vVFRitS5nKkcpnTHMKTjSDA9CCnwU9P341N.8woi2hZUn2i2VG5XGuoGV4.lTsU6gOMaFYB.7VS0d7xTN0cW7OeWDqoK7GNTMP.t8VBCCvUGiqRKKBnMb84mBWiyNtjd65r41cf9juguPh7M3rdBoq.IaJoPP.h_pFW1YaHF9I4BwwgCIMi5MtKJjCexqgfg_I3T4V.14zRkYsAs6PzLY1xh9nMWGPgY6fP8qFiyHdJAu4tHFP5coQLaN1WnxXEruZgMNu.ihxIeSzlZxti0nK6owzowKCs6_a9CIeuzLf4cay17c6kcisrx_50yxuwRBBGLcUBqbDGhX3ai4C8q8DnODlodqncVvB30nmewQ0QO5Iy_qOFKzuUhxuRQYPPTbX5ym_07ZICevI0lw1umxF6DEZgYkCtjY',};var a = document.createElement('script');a.src = '/cdn-cgi/challenge-platform/h/b/orchestrate/chl_page/v1?ray=972df544dba3b2c9';window._cf_chl_opt.cOgUHash = location.hash === '' && location.href.indexOf('#') !== -1 ? '#' : location.hash;window._cf_chl_opt.cOgUQuery = location.search === '' && location.href.slice(0, location.href.length - window._cf_chl_opt.cOgUHash.length).indexOf('?') !== -1 ? '?' : location.search;if (window.history && window.history.replaceState) {var ogU = location.pathname + window._cf_chl_opt.cOgUQuery + window._cf_chl_opt.cOgUHash;history.replaceState(null, null,"\/sitemap.xml?__cf_chl_rt_tk=Yvyikp30UbFbkGhvKwSFRYi1d.jK.1z454EKxHABGSI-1755819443-1.0.1.1-WgwY4uiLEN0r3W5FNOwcFTiTiPGua8QzmYrX5bRzCL4"+ window._cf_chl_opt.cOgUHash);a.onload = function() {history.replaceState(null, null, ogU);}}document.getElementsByTagName('head')[0].appendChild(a);}());</script></p>
+                <p><strong>CWE ID:</strong> -1</p>
+                <p><strong>WASC ID:</strong> -1</p>
+            </div>
+            
+            <div class="alert informational">
+                <h3><span class="risk-informational">Informational</span>: Session Management Response Identified</h3>
+                <p><strong>URL:</strong> https://www.udemy.com/sitemap.xml</p>
+                <p><strong>Description:</strong> The given response has been identified as containing a session management token. The 'Other Info' field contains a set of header tokens that can be used in the Header Based Session Management Method. If the request is in a context which has a Session Management Method set to "Auto-Detect" then this rule will change the session management to use the tokens identified.</p>
+                <p><strong>Solution:</strong> This is an informational alert rather than a vulnerability and so there is nothing to fix.</p>
+                <p><strong>Reference:</strong> https://www.zaproxy.org/docs/desktop/addons/authentication-helper/session-mgmt-id</p>
+                <p><strong>Parameter:</strong> __cf_bm</p>
+                <p><strong>Evidence:</strong> __cf_bm</p>
+                <p><strong>CWE ID:</strong> -1</p>
+                <p><strong>WASC ID:</strong> -1</p>
+            </div>
+            
+            <div class="alert informational">
+                <h3><span class="risk-informational">Informational</span>: Session Management Response Identified</h3>
+                <p><strong>URL:</strong> https://www.udemy.com/</p>
+                <p><strong>Description:</strong> The given response has been identified as containing a session management token. The 'Other Info' field contains a set of header tokens that can be used in the Header Based Session Management Method. If the request is in a context which has a Session Management Method set to "Auto-Detect" then this rule will change the session management to use the tokens identified.</p>
+                <p><strong>Solution:</strong> This is an informational alert rather than a vulnerability and so there is nothing to fix.</p>
+                <p><strong>Reference:</strong> https://www.zaproxy.org/docs/desktop/addons/authentication-helper/session-mgmt-id</p>
+                <p><strong>Parameter:</strong> __cf_bm</p>
+                <p><strong>Evidence:</strong> __cf_bm</p>
+                <p><strong>CWE ID:</strong> -1</p>
+                <p><strong>WASC ID:</strong> -1</p>
+            </div>
+            
+            <div class="alert informational">
+                <h3><span class="risk-informational">Informational</span>: Session Management Response Identified</h3>
+                <p><strong>URL:</strong> https://www.udemy.com/robots.txt</p>
+                <p><strong>Description:</strong> The given response has been identified as containing a session management token. The 'Other Info' field contains a set of header tokens that can be used in the Header Based Session Management Method. If the request is in a context which has a Session Management Method set to "Auto-Detect" then this rule will change the session management to use the tokens identified.</p>
+                <p><strong>Solution:</strong> This is an informational alert rather than a vulnerability and so there is nothing to fix.</p>
+                <p><strong>Reference:</strong> https://www.zaproxy.org/docs/desktop/addons/authentication-helper/session-mgmt-id</p>
+                <p><strong>Parameter:</strong> __cf_bm</p>
+                <p><strong>Evidence:</strong> __cf_bm</p>
+                <p><strong>CWE ID:</strong> -1</p>
+                <p><strong>WASC ID:</strong> -1</p>
+            </div>
+            
+            <div class="alert informational">
+                <h3><span class="risk-informational">Informational</span>: User Agent Fuzzer</h3>
+                <p><strong>URL:</strong> https://www.udemy.com/</p>
+                <p><strong>Description:</strong> Check for differences in response based on fuzzed User Agent (eg. mobile sites, access as a Search Engine Crawler). Compares the response statuscode and the hashcode of the response body with the original response.</p>
+                <p><strong>Solution:</strong> </p>
+                <p><strong>Reference:</strong> https://owasp.org/wstg</p>
+                <p><strong>Parameter:</strong> Header User-Agent</p>
+                <p><strong>Evidence:</strong> </p>
+                <p><strong>CWE ID:</strong> 0</p>
+                <p><strong>WASC ID:</strong> 0</p>
+            </div>
+            
+            <div class="alert informational">
+                <h3><span class="risk-informational">Informational</span>: User Agent Fuzzer</h3>
+                <p><strong>URL:</strong> https://www.udemy.com/sitemap.xml</p>
+                <p><strong>Description:</strong> Check for differences in response based on fuzzed User Agent (eg. mobile sites, access as a Search Engine Crawler). Compares the response statuscode and the hashcode of the response body with the original response.</p>
+                <p><strong>Solution:</strong> </p>
+                <p><strong>Reference:</strong> https://owasp.org/wstg</p>
+                <p><strong>Parameter:</strong> Header User-Agent</p>
+                <p><strong>Evidence:</strong> </p>
+                <p><strong>CWE ID:</strong> 0</p>
+                <p><strong>WASC ID:</strong> 0</p>
+            </div>
+            
+            <div class="alert informational">
+                <h3><span class="risk-informational">Informational</span>: User Agent Fuzzer</h3>
+                <p><strong>URL:</strong> https://www.udemy.com/robots.txt</p>
+                <p><strong>Description:</strong> Check for differences in response based on fuzzed User Agent (eg. mobile sites, access as a Search Engine Crawler). Compares the response statuscode and the hashcode of the response body with the original response.</p>
+                <p><strong>Solution:</strong> </p>
+                <p><strong>Reference:</strong> https://owasp.org/wstg</p>
+                <p><strong>Parameter:</strong> Header User-Agent</p>
+                <p><strong>Evidence:</strong> </p>
+                <p><strong>CWE ID:</strong> 0</p>
+                <p><strong>WASC ID:</strong> 0</p>
+            </div>
+            
+            <div class="alert informational">
+                <h3><span class="risk-informational">Informational</span>: User Agent Fuzzer</h3>
+                <p><strong>URL:</strong> https://www.udemy.com/robots.txt</p>
+                <p><strong>Description:</strong> Check for differences in response based on fuzzed User Agent (eg. mobile sites, access as a Search Engine Crawler). Compares the response statuscode and the hashcode of the response body with the original response.</p>
+                <p><strong>Solution:</strong> </p>
+                <p><strong>Reference:</strong> https://owasp.org/wstg</p>
+                <p><strong>Parameter:</strong> Header User-Agent</p>
+                <p><strong>Evidence:</strong> </p>
+                <p><strong>CWE ID:</strong> 0</p>
+                <p><strong>WASC ID:</strong> 0</p>
+            </div>
+            
+            <div class="alert informational">
+                <h3><span class="risk-informational">Informational</span>: User Agent Fuzzer</h3>
+                <p><strong>URL:</strong> https://www.udemy.com/sitemap.xml</p>
+                <p><strong>Description:</strong> Check for differences in response based on fuzzed User Agent (eg. mobile sites, access as a Search Engine Crawler). Compares the response statuscode and the hashcode of the response body with the original response.</p>
+                <p><strong>Solution:</strong> </p>
+                <p><strong>Reference:</strong> https://owasp.org/wstg</p>
+                <p><strong>Parameter:</strong> Header User-Agent</p>
+                <p><strong>Evidence:</strong> </p>
+                <p><strong>CWE ID:</strong> 0</p>
+                <p><strong>WASC ID:</strong> 0</p>
+            </div>
+            
+            <div class="alert informational">
+                <h3><span class="risk-informational">Informational</span>: User Agent Fuzzer</h3>
+                <p><strong>URL:</strong> https://www.udemy.com/</p>
+                <p><strong>Description:</strong> Check for differences in response based on fuzzed User Agent (eg. mobile sites, access as a Search Engine Crawler). Compares the response statuscode and the hashcode of the response body with the original response.</p>
+                <p><strong>Solution:</strong> </p>
+                <p><strong>Reference:</strong> https://owasp.org/wstg</p>
+                <p><strong>Parameter:</strong> Header User-Agent</p>
+                <p><strong>Evidence:</strong> </p>
+                <p><strong>CWE ID:</strong> 0</p>
+                <p><strong>WASC ID:</strong> 0</p>
+            </div>
+            
+            <div class="alert informational">
+                <h3><span class="risk-informational">Informational</span>: User Agent Fuzzer</h3>
+                <p><strong>URL:</strong> https://www.udemy.com/sitemap.xml</p>
+                <p><strong>Description:</strong> Check for differences in response based on fuzzed User Agent (eg. mobile sites, access as a Search Engine Crawler). Compares the response statuscode and the hashcode of the response body with the original response.</p>
+                <p><strong>Solution:</strong> </p>
+                <p><strong>Reference:</strong> https://owasp.org/wstg</p>
+                <p><strong>Parameter:</strong> Header User-Agent</p>
+                <p><strong>Evidence:</strong> </p>
+                <p><strong>CWE ID:</strong> 0</p>
+                <p><strong>WASC ID:</strong> 0</p>
+            </div>
+            
+            <div class="alert informational">
+                <h3><span class="risk-informational">Informational</span>: User Agent Fuzzer</h3>
+                <p><strong>URL:</strong> https://www.udemy.com/</p>
+                <p><strong>Description:</strong> Check for differences in response based on fuzzed User Agent (eg. mobile sites, access as a Search Engine Crawler). Compares the response statuscode and the hashcode of the response body with the original response.</p>
+                <p><strong>Solution:</strong> </p>
+                <p><strong>Reference:</strong> https://owasp.org/wstg</p>
+                <p><strong>Parameter:</strong> Header User-Agent</p>
+                <p><strong>Evidence:</strong> </p>
+                <p><strong>CWE ID:</strong> 0</p>
+                <p><strong>WASC ID:</strong> 0</p>
+            </div>
+            
+            <div class="alert informational">
+                <h3><span class="risk-informational">Informational</span>: User Agent Fuzzer</h3>
+                <p><strong>URL:</strong> https://www.udemy.com/robots.txt</p>
+                <p><strong>Description:</strong> Check for differences in response based on fuzzed User Agent (eg. mobile sites, access as a Search Engine Crawler). Compares the response statuscode and the hashcode of the response body with the original response.</p>
+                <p><strong>Solution:</strong> </p>
+                <p><strong>Reference:</strong> https://owasp.org/wstg</p>
+                <p><strong>Parameter:</strong> Header User-Agent</p>
+                <p><strong>Evidence:</strong> </p>
+                <p><strong>CWE ID:</strong> 0</p>
+                <p><strong>WASC ID:</strong> 0</p>
+            </div>
+            
+            <div class="alert informational">
+                <h3><span class="risk-informational">Informational</span>: User Agent Fuzzer</h3>
+                <p><strong>URL:</strong> https://www.udemy.com/</p>
+                <p><strong>Description:</strong> Check for differences in response based on fuzzed User Agent (eg. mobile sites, access as a Search Engine Crawler). Compares the response statuscode and the hashcode of the response body with the original response.</p>
+                <p><strong>Solution:</strong> </p>
+                <p><strong>Reference:</strong> https://owasp.org/wstg</p>
+                <p><strong>Parameter:</strong> Header User-Agent</p>
+                <p><strong>Evidence:</strong> </p>
+                <p><strong>CWE ID:</strong> 0</p>
+                <p><strong>WASC ID:</strong> 0</p>
+            </div>
+            
+            <div class="alert informational">
+                <h3><span class="risk-informational">Informational</span>: User Agent Fuzzer</h3>
+                <p><strong>URL:</strong> https://www.udemy.com/sitemap.xml</p>
+                <p><strong>Description:</strong> Check for differences in response based on fuzzed User Agent (eg. mobile sites, access as a Search Engine Crawler). Compares the response statuscode and the hashcode of the response body with the original response.</p>
+                <p><strong>Solution:</strong> </p>
+                <p><strong>Reference:</strong> https://owasp.org/wstg</p>
+                <p><strong>Parameter:</strong> Header User-Agent</p>
+                <p><strong>Evidence:</strong> </p>
+                <p><strong>CWE ID:</strong> 0</p>
+                <p><strong>WASC ID:</strong> 0</p>
+            </div>
+            
+            <div class="alert informational">
+                <h3><span class="risk-informational">Informational</span>: User Agent Fuzzer</h3>
+                <p><strong>URL:</strong> https://www.udemy.com/robots.txt</p>
+                <p><strong>Description:</strong> Check for differences in response based on fuzzed User Agent (eg. mobile sites, access as a Search Engine Crawler). Compares the response statuscode and the hashcode of the response body with the original response.</p>
+                <p><strong>Solution:</strong> </p>
+                <p><strong>Reference:</strong> https://owasp.org/wstg</p>
+                <p><strong>Parameter:</strong> Header User-Agent</p>
+                <p><strong>Evidence:</strong> </p>
+                <p><strong>CWE ID:</strong> 0</p>
+                <p><strong>WASC ID:</strong> 0</p>
+            </div>
+            
+            <div class="alert informational">
+                <h3><span class="risk-informational">Informational</span>: User Agent Fuzzer</h3>
+                <p><strong>URL:</strong> https://www.udemy.com/robots.txt</p>
+                <p><strong>Description:</strong> Check for differences in response based on fuzzed User Agent (eg. mobile sites, access as a Search Engine Crawler). Compares the response statuscode and the hashcode of the response body with the original response.</p>
+                <p><strong>Solution:</strong> </p>
+                <p><strong>Reference:</strong> https://owasp.org/wstg</p>
+                <p><strong>Parameter:</strong> Header User-Agent</p>
+                <p><strong>Evidence:</strong> </p>
+                <p><strong>CWE ID:</strong> 0</p>
+                <p><strong>WASC ID:</strong> 0</p>
+            </div>
+            
+            <div class="alert informational">
+                <h3><span class="risk-informational">Informational</span>: User Agent Fuzzer</h3>
+                <p><strong>URL:</strong> https://www.udemy.com/sitemap.xml</p>
+                <p><strong>Description:</strong> Check for differences in response based on fuzzed User Agent (eg. mobile sites, access as a Search Engine Crawler). Compares the response statuscode and the hashcode of the response body with the original response.</p>
+                <p><strong>Solution:</strong> </p>
+                <p><strong>Reference:</strong> https://owasp.org/wstg</p>
+                <p><strong>Parameter:</strong> Header User-Agent</p>
+                <p><strong>Evidence:</strong> </p>
+                <p><strong>CWE ID:</strong> 0</p>
+                <p><strong>WASC ID:</strong> 0</p>
+            </div>
+            
+            <div class="alert informational">
+                <h3><span class="risk-informational">Informational</span>: User Agent Fuzzer</h3>
+                <p><strong>URL:</strong> https://www.udemy.com/</p>
+                <p><strong>Description:</strong> Check for differences in response based on fuzzed User Agent (eg. mobile sites, access as a Search Engine Crawler). Compares the response statuscode and the hashcode of the response body with the original response.</p>
+                <p><strong>Solution:</strong> </p>
+                <p><strong>Reference:</strong> https://owasp.org/wstg</p>
+                <p><strong>Parameter:</strong> Header User-Agent</p>
+                <p><strong>Evidence:</strong> </p>
+                <p><strong>CWE ID:</strong> 0</p>
+                <p><strong>WASC ID:</strong> 0</p>
+            </div>
+            
+            <div class="alert informational">
+                <h3><span class="risk-informational">Informational</span>: User Agent Fuzzer</h3>
+                <p><strong>URL:</strong> https://www.udemy.com/robots.txt</p>
+                <p><strong>Description:</strong> Check for differences in response based on fuzzed User Agent (eg. mobile sites, access as a Search Engine Crawler). Compares the response statuscode and the hashcode of the response body with the original response.</p>
+                <p><strong>Solution:</strong> </p>
+                <p><strong>Reference:</strong> https://owasp.org/wstg</p>
+                <p><strong>Parameter:</strong> Header User-Agent</p>
+                <p><strong>Evidence:</strong> </p>
+                <p><strong>CWE ID:</strong> 0</p>
+                <p><strong>WASC ID:</strong> 0</p>
+            </div>
+            
+            <div class="alert informational">
+                <h3><span class="risk-informational">Informational</span>: User Agent Fuzzer</h3>
+                <p><strong>URL:</strong> https://www.udemy.com/</p>
+                <p><strong>Description:</strong> Check for differences in response based on fuzzed User Agent (eg. mobile sites, access as a Search Engine Crawler). Compares the response statuscode and the hashcode of the response body with the original response.</p>
+                <p><strong>Solution:</strong> </p>
+                <p><strong>Reference:</strong> https://owasp.org/wstg</p>
+                <p><strong>Parameter:</strong> Header User-Agent</p>
+                <p><strong>Evidence:</strong> </p>
+                <p><strong>CWE ID:</strong> 0</p>
+                <p><strong>WASC ID:</strong> 0</p>
+            </div>
+            
+            <div class="alert informational">
+                <h3><span class="risk-informational">Informational</span>: User Agent Fuzzer</h3>
+                <p><strong>URL:</strong> https://www.udemy.com/sitemap.xml</p>
+                <p><strong>Description:</strong> Check for differences in response based on fuzzed User Agent (eg. mobile sites, access as a Search Engine Crawler). Compares the response statuscode and the hashcode of the response body with the original response.</p>
+                <p><strong>Solution:</strong> </p>
+                <p><strong>Reference:</strong> https://owasp.org/wstg</p>
+                <p><strong>Parameter:</strong> Header User-Agent</p>
+                <p><strong>Evidence:</strong> </p>
+                <p><strong>CWE ID:</strong> 0</p>
+                <p><strong>WASC ID:</strong> 0</p>
+            </div>
+            
+            <div class="alert informational">
+                <h3><span class="risk-informational">Informational</span>: User Agent Fuzzer</h3>
+                <p><strong>URL:</strong> https://www.udemy.com/robots.txt</p>
+                <p><strong>Description:</strong> Check for differences in response based on fuzzed User Agent (eg. mobile sites, access as a Search Engine Crawler). Compares the response statuscode and the hashcode of the response body with the original response.</p>
+                <p><strong>Solution:</strong> </p>
+                <p><strong>Reference:</strong> https://owasp.org/wstg</p>
+                <p><strong>Parameter:</strong> Header User-Agent</p>
+                <p><strong>Evidence:</strong> </p>
+                <p><strong>CWE ID:</strong> 0</p>
+                <p><strong>WASC ID:</strong> 0</p>
+            </div>
+            
+            <div class="alert informational">
+                <h3><span class="risk-informational">Informational</span>: User Agent Fuzzer</h3>
+                <p><strong>URL:</strong> https://www.udemy.com/sitemap.xml</p>
+                <p><strong>Description:</strong> Check for differences in response based on fuzzed User Agent (eg. mobile sites, access as a Search Engine Crawler). Compares the response statuscode and the hashcode of the response body with the original response.</p>
+                <p><strong>Solution:</strong> </p>
+                <p><strong>Reference:</strong> https://owasp.org/wstg</p>
+                <p><strong>Parameter:</strong> Header User-Agent</p>
+                <p><strong>Evidence:</strong> </p>
+                <p><strong>CWE ID:</strong> 0</p>
+                <p><strong>WASC ID:</strong> 0</p>
+            </div>
+            
+            <div class="alert informational">
+                <h3><span class="risk-informational">Informational</span>: User Agent Fuzzer</h3>
+                <p><strong>URL:</strong> https://www.udemy.com/</p>
+                <p><strong>Description:</strong> Check for differences in response based on fuzzed User Agent (eg. mobile sites, access as a Search Engine Crawler). Compares the response statuscode and the hashcode of the response body with the original response.</p>
+                <p><strong>Solution:</strong> </p>
+                <p><strong>Reference:</strong> https://owasp.org/wstg</p>
+                <p><strong>Parameter:</strong> Header User-Agent</p>
+                <p><strong>Evidence:</strong> </p>
+                <p><strong>CWE ID:</strong> 0</p>
+                <p><strong>WASC ID:</strong> 0</p>
+            </div>
+            
+            <div class="alert informational">
+                <h3><span class="risk-informational">Informational</span>: User Agent Fuzzer</h3>
+                <p><strong>URL:</strong> https://www.udemy.com/robots.txt</p>
+                <p><strong>Description:</strong> Check for differences in response based on fuzzed User Agent (eg. mobile sites, access as a Search Engine Crawler). Compares the response statuscode and the hashcode of the response body with the original response.</p>
+                <p><strong>Solution:</strong> </p>
+                <p><strong>Reference:</strong> https://owasp.org/wstg</p>
+                <p><strong>Parameter:</strong> Header User-Agent</p>
+                <p><strong>Evidence:</strong> </p>
+                <p><strong>CWE ID:</strong> 0</p>
+                <p><strong>WASC ID:</strong> 0</p>
+            </div>
+            
+            <div class="alert informational">
+                <h3><span class="risk-informational">Informational</span>: User Agent Fuzzer</h3>
+                <p><strong>URL:</strong> https://www.udemy.com/sitemap.xml</p>
+                <p><strong>Description:</strong> Check for differences in response based on fuzzed User Agent (eg. mobile sites, access as a Search Engine Crawler). Compares the response statuscode and the hashcode of the response body with the original response.</p>
+                <p><strong>Solution:</strong> </p>
+                <p><strong>Reference:</strong> https://owasp.org/wstg</p>
+                <p><strong>Parameter:</strong> Header User-Agent</p>
+                <p><strong>Evidence:</strong> </p>
+                <p><strong>CWE ID:</strong> 0</p>
+                <p><strong>WASC ID:</strong> 0</p>
+            </div>
+            
+            <div class="alert informational">
+                <h3><span class="risk-informational">Informational</span>: User Agent Fuzzer</h3>
+                <p><strong>URL:</strong> https://www.udemy.com/</p>
+                <p><strong>Description:</strong> Check for differences in response based on fuzzed User Agent (eg. mobile sites, access as a Search Engine Crawler). Compares the response statuscode and the hashcode of the response body with the original response.</p>
+                <p><strong>Solution:</strong> </p>
+                <p><strong>Reference:</strong> https://owasp.org/wstg</p>
+                <p><strong>Parameter:</strong> Header User-Agent</p>
+                <p><strong>Evidence:</strong> </p>
+                <p><strong>CWE ID:</strong> 0</p>
+                <p><strong>WASC ID:</strong> 0</p>
+            </div>
+            
+            <div class="alert informational">
+                <h3><span class="risk-informational">Informational</span>: User Agent Fuzzer</h3>
+                <p><strong>URL:</strong> https://www.udemy.com/robots.txt</p>
+                <p><strong>Description:</strong> Check for differences in response based on fuzzed User Agent (eg. mobile sites, access as a Search Engine Crawler). Compares the response statuscode and the hashcode of the response body with the original response.</p>
+                <p><strong>Solution:</strong> </p>
+                <p><strong>Reference:</strong> https://owasp.org/wstg</p>
+                <p><strong>Parameter:</strong> Header User-Agent</p>
+                <p><strong>Evidence:</strong> </p>
+                <p><strong>CWE ID:</strong> 0</p>
+                <p><strong>WASC ID:</strong> 0</p>
+            </div>
+            
+            <div class="alert informational">
+                <h3><span class="risk-informational">Informational</span>: User Agent Fuzzer</h3>
+                <p><strong>URL:</strong> https://www.udemy.com/sitemap.xml</p>
+                <p><strong>Description:</strong> Check for differences in response based on fuzzed User Agent (eg. mobile sites, access as a Search Engine Crawler). Compares the response statuscode and the hashcode of the response body with the original response.</p>
+                <p><strong>Solution:</strong> </p>
+                <p><strong>Reference:</strong> https://owasp.org/wstg</p>
+                <p><strong>Parameter:</strong> Header User-Agent</p>
+                <p><strong>Evidence:</strong> </p>
+                <p><strong>CWE ID:</strong> 0</p>
+                <p><strong>WASC ID:</strong> 0</p>
+            </div>
+            
+            <div class="alert informational">
+                <h3><span class="risk-informational">Informational</span>: User Agent Fuzzer</h3>
+                <p><strong>URL:</strong> https://www.udemy.com/</p>
+                <p><strong>Description:</strong> Check for differences in response based on fuzzed User Agent (eg. mobile sites, access as a Search Engine Crawler). Compares the response statuscode and the hashcode of the response body with the original response.</p>
+                <p><strong>Solution:</strong> </p>
+                <p><strong>Reference:</strong> https://owasp.org/wstg</p>
+                <p><strong>Parameter:</strong> Header User-Agent</p>
+                <p><strong>Evidence:</strong> </p>
+                <p><strong>CWE ID:</strong> 0</p>
+                <p><strong>WASC ID:</strong> 0</p>
+            </div>
+            
+            <div class="alert informational">
+                <h3><span class="risk-informational">Informational</span>: User Agent Fuzzer</h3>
+                <p><strong>URL:</strong> https://www.udemy.com/robots.txt</p>
+                <p><strong>Description:</strong> Check for differences in response based on fuzzed User Agent (eg. mobile sites, access as a Search Engine Crawler). Compares the response statuscode and the hashcode of the response body with the original response.</p>
+                <p><strong>Solution:</strong> </p>
+                <p><strong>Reference:</strong> https://owasp.org/wstg</p>
+                <p><strong>Parameter:</strong> Header User-Agent</p>
+                <p><strong>Evidence:</strong> </p>
+                <p><strong>CWE ID:</strong> 0</p>
+                <p><strong>WASC ID:</strong> 0</p>
+            </div>
+            
+            <div class="alert informational">
+                <h3><span class="risk-informational">Informational</span>: User Agent Fuzzer</h3>
+                <p><strong>URL:</strong> https://www.udemy.com/sitemap.xml</p>
+                <p><strong>Description:</strong> Check for differences in response based on fuzzed User Agent (eg. mobile sites, access as a Search Engine Crawler). Compares the response statuscode and the hashcode of the response body with the original response.</p>
+                <p><strong>Solution:</strong> </p>
+                <p><strong>Reference:</strong> https://owasp.org/wstg</p>
+                <p><strong>Parameter:</strong> Header User-Agent</p>
+                <p><strong>Evidence:</strong> </p>
+                <p><strong>CWE ID:</strong> 0</p>
+                <p><strong>WASC ID:</strong> 0</p>
+            </div>
+            
+            <div class="alert informational">
+                <h3><span class="risk-informational">Informational</span>: User Agent Fuzzer</h3>
+                <p><strong>URL:</strong> https://www.udemy.com/</p>
+                <p><strong>Description:</strong> Check for differences in response based on fuzzed User Agent (eg. mobile sites, access as a Search Engine Crawler). Compares the response statuscode and the hashcode of the response body with the original response.</p>
+                <p><strong>Solution:</strong> </p>
+                <p><strong>Reference:</strong> https://owasp.org/wstg</p>
+                <p><strong>Parameter:</strong> Header User-Agent</p>
+                <p><strong>Evidence:</strong> </p>
+                <p><strong>CWE ID:</strong> 0</p>
+                <p><strong>WASC ID:</strong> 0</p>
+            </div>
+            
+            <div class="alert informational">
+                <h3><span class="risk-informational">Informational</span>: User Agent Fuzzer</h3>
+                <p><strong>URL:</strong> https://www.udemy.com/robots.txt</p>
+                <p><strong>Description:</strong> Check for differences in response based on fuzzed User Agent (eg. mobile sites, access as a Search Engine Crawler). Compares the response statuscode and the hashcode of the response body with the original response.</p>
+                <p><strong>Solution:</strong> </p>
+                <p><strong>Reference:</strong> https://owasp.org/wstg</p>
+                <p><strong>Parameter:</strong> Header User-Agent</p>
+                <p><strong>Evidence:</strong> </p>
+                <p><strong>CWE ID:</strong> 0</p>
+                <p><strong>WASC ID:</strong> 0</p>
+            </div>
+            
+            <div class="alert informational">
+                <h3><span class="risk-informational">Informational</span>: User Agent Fuzzer</h3>
+                <p><strong>URL:</strong> https://www.udemy.com/</p>
+                <p><strong>Description:</strong> Check for differences in response based on fuzzed User Agent (eg. mobile sites, access as a Search Engine Crawler). Compares the response statuscode and the hashcode of the response body with the original response.</p>
+                <p><strong>Solution:</strong> </p>
+                <p><strong>Reference:</strong> https://owasp.org/wstg</p>
+                <p><strong>Parameter:</strong> Header User-Agent</p>
+                <p><strong>Evidence:</strong> </p>
+                <p><strong>CWE ID:</strong> 0</p>
+                <p><strong>WASC ID:</strong> 0</p>
+            </div>
+            
+            <div class="alert informational">
+                <h3><span class="risk-informational">Informational</span>: User Agent Fuzzer</h3>
+                <p><strong>URL:</strong> https://www.udemy.com/sitemap.xml</p>
+                <p><strong>Description:</strong> Check for differences in response based on fuzzed User Agent (eg. mobile sites, access as a Search Engine Crawler). Compares the response statuscode and the hashcode of the response body with the original response.</p>
+                <p><strong>Solution:</strong> </p>
+                <p><strong>Reference:</strong> https://owasp.org/wstg</p>
+                <p><strong>Parameter:</strong> Header User-Agent</p>
+                <p><strong>Evidence:</strong> </p>
+                <p><strong>CWE ID:</strong> 0</p>
+                <p><strong>WASC ID:</strong> 0</p>
+            </div>
+            
+            <div class="alert informational">
+                <h3><span class="risk-informational">Informational</span>: User Agent Fuzzer</h3>
+                <p><strong>URL:</strong> https://www.udemy.com/robots.txt</p>
+                <p><strong>Description:</strong> Check for differences in response based on fuzzed User Agent (eg. mobile sites, access as a Search Engine Crawler). Compares the response statuscode and the hashcode of the response body with the original response.</p>
+                <p><strong>Solution:</strong> </p>
+                <p><strong>Reference:</strong> https://owasp.org/wstg</p>
+                <p><strong>Parameter:</strong> Header User-Agent</p>
+                <p><strong>Evidence:</strong> </p>
+                <p><strong>CWE ID:</strong> 0</p>
+                <p><strong>WASC ID:</strong> 0</p>
+            </div>
+            
+            <div class="alert informational">
+                <h3><span class="risk-informational">Informational</span>: User Agent Fuzzer</h3>
+                <p><strong>URL:</strong> https://www.udemy.com/</p>
+                <p><strong>Description:</strong> Check for differences in response based on fuzzed User Agent (eg. mobile sites, access as a Search Engine Crawler). Compares the response statuscode and the hashcode of the response body with the original response.</p>
+                <p><strong>Solution:</strong> </p>
+                <p><strong>Reference:</strong> https://owasp.org/wstg</p>
+                <p><strong>Parameter:</strong> Header User-Agent</p>
+                <p><strong>Evidence:</strong> </p>
+                <p><strong>CWE ID:</strong> 0</p>
+                <p><strong>WASC ID:</strong> 0</p>
+            </div>
+            
+            <div class="alert informational">
+                <h3><span class="risk-informational">Informational</span>: User Agent Fuzzer</h3>
+                <p><strong>URL:</strong> https://www.udemy.com/sitemap.xml</p>
+                <p><strong>Description:</strong> Check for differences in response based on fuzzed User Agent (eg. mobile sites, access as a Search Engine Crawler). Compares the response statuscode and the hashcode of the response body with the original response.</p>
+                <p><strong>Solution:</strong> </p>
+                <p><strong>Reference:</strong> https://owasp.org/wstg</p>
+                <p><strong>Parameter:</strong> Header User-Agent</p>
+                <p><strong>Evidence:</strong> </p>
+                <p><strong>CWE ID:</strong> 0</p>
+                <p><strong>WASC ID:</strong> 0</p>
+            </div>
+            
+</body>
+</html>

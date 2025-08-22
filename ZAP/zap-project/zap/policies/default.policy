@@ -1,0 +1,12 @@
+<?xml version="1.0"?>
+<policy>
+  <scanner>
+    <rules>
+      <rule id="1" threshold="MEDIUM"/>
+      <rule id="2" threshold="HIGH"/>
+      <rule id="3" threshold="MEDIUM"/>
+      <rule id="4" threshold="HIGH"/>
+      <rule id="5" threshold="MEDIUM"/>
+    </rules>
+  </scanner>
+</policy>

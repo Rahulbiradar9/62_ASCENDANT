@@ -1,0 +1,10 @@
+services:
+  zap:
+    build: ./zap
+    container_name: zap
+    ports:
+      - "8080:8080"
+    volumes:
+      - ./reports:/home/zap/reports
+    command: zap.sh -daemon -host 0.0.0.0 -port 8080 -config api.disablekey=true
+

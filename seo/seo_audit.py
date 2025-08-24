@@ -1296,12 +1296,11 @@ def _serve_web(host: str, port: int, default_max_links: int) -> None:
         report = seo_audit(target_url, max_links=max_links, workers=workers)
         elapsed = time.time() - start_time
         
-        # Add timing info to report
         report["analysis_time"] = elapsed
         report["workers_used"] = workers
         report["fast_mode"] = fast_mode
         
-        # Build results section summary and link to full report view
+        
         link = f"/full?url={requests.utils.quote(target_url, safe='')}&max_links={max_links}&workers={workers}&fast_mode={fast_mode}"
         summary = _build_summary(report)
         results_html = _render_results_section(summary, link, report)
